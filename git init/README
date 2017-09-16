@@ -1,0 +1,6 @@
+- name: Download Inconsolata programming font
+2	  get_url:
+3	      url: "{{ item }}"
+4	      dest: ~/Desktop/
+5	  with_items:
+6	      - https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
